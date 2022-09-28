@@ -1,5 +1,26 @@
 # Spotitter
 
-Still a WIP 
+## About
+This app uses the Spotify and Twitter APIs to pull up to the 3200 most recent tweets from a given Twitter user's timeline, then it performs some simple text processing to generate a list of songs from Spotify that are displayed back to the app user.  
 
-Live Link: https://spotitter.herokuapp.com
+
+
+## Built With
+
+* [![React][React.js]][React-url]
+* [![Express][Express.js]][Express-url]
+* [![Node][Node.js]][Node-url]
+* [![Spotify][Spotify]][Spotify-url]
+* [![Twitter][Twitter]][Twitter-url]
+
+
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[Express.js]:https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB
+[Node.js]:https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
+[Spotify]: https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white
+[Twitter]:https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white
+[React-url]: https://reactjs.org/
+[Express-url]: https://expressjs.com/
+[Node-url]: https://nodejs.org/en/
+[Spotify-url]: https://open.spotify.com/
+[Twitter-url]: https://twitter.com/home
