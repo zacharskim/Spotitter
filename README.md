@@ -3,6 +3,18 @@
 ## About
 This app uses the Spotify and Twitter APIs to pull up to the 3200 most recent tweets from a given Twitter user's timeline, then it performs some simple text processing to generate a list of songs from Spotify that are displayed back to the app user.  
 
+## Running Scripts Locally
+The 'front' folder contains front end related files, the 'back' folder contains back end related files.
+
+
+#### `npm start`
+Must be run in the root of the front end folder.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+#### `npm run dev`
+Must be run in the root of the front end folder.
+Runs the sever in the development mode
 
 
 ## Built With
