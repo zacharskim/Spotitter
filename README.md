@@ -3,8 +3,15 @@
 ## About
 This app uses the Spotify and Twitter APIs to pull up to the 3200 most recent tweets from a given Twitter user's timeline, then it performs some simple text processing to generate a list of songs from Spotify that are displayed back to the app user.  
 
+
+## Example Demo
+
+![image](https://user-images.githubusercontent.com/45699852/193711684-43ef0ecd-182b-4157-a285-f94dae072b8a.png)
+
+
 ## Running Scripts Locally
 The 'front' folder contains front end related files, the 'back' folder contains back end related files.
+
 
 
 #### `npm start`
