@@ -12,7 +12,7 @@ This app uses the Spotify and Twitter APIs to pull up to the 3200 most recent tw
 
 
 ## Running Scripts Locally
-The 'front' folder contains front end related files, the 'back' folder contains back end related files.
+The 'front' folder contains front end related files, the 'back' folder contains back end related files. API keys are needed for Twitter data nad Spotify data, plus certain lines of code need to be switched to 'http://localhost:3000' in order for this project to be run locally.
 
 
 
