@@ -13,9 +13,7 @@ const Tweets = ({tweets, setTweets}) => {
     return(
         <div>
             {tweets.data[1].map(tweet => 
-            
-
-                tweet.body.tracks.items.slice(1,2).map(song => 
+            tweet.body.tracks.items.slice(1,2).map(song => 
                     
                     <div className={styles["tweet"]}>
             <img

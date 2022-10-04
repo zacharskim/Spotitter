@@ -1,0 +1,46 @@
+# fly.toml file generated for spotitter-back on 2022-10-03T19:08:17-04:00
+
+app = "spotitter-back"
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[build]
+  builder = "heroku/buildpacks:20"
+
+[env]
+  PORT = "8080"
+  bearerToken = "AAAAAAAAAAAAAAAAAAAAAC6QaQEAAAAAOH1SpmHIUfdxTVqQkkN5qpv7CVU%3DFZtqtj01W9Zhkm9Q7Zs3C51uHg49Rr2KqeasrusuFifBmf6bkT"
+  client_id= "390cf5b268eb4fe08cac1b694739f0b9"
+  client_secret = "7edd4ee6f80a4bf680550124929d9ea2"
+  redirect_uri="https://spotitter-back.fly.dev/callback"
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
+
+[[services]]
+  http_checks = []
+  internal_port = 8080
+  processes = ["app"]
+  protocol = "tcp"
+  script_checks = []
+  [services.concurrency]
+    hard_limit = 25
+    soft_limit = 20
+    type = "connections"
+
+  [[services.ports]]
+    force_https = true
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+  [[services.tcp_checks]]
+    grace_period = "1s"
+    interval = "15s"
+    restart_limit = 0
+    timeout = "2s"

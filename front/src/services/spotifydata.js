@@ -1,14 +1,10 @@
-import axios from 'axios'
+import axios from "axios";
 
+const baseUrl = "https://spotitter-back.fly.dev/";
 
-const baseUrl = 'http://localhost:3001/'
+const getTracks = (searchWord) => {
+  const request = axios.get(`${baseUrl}/${searchWord}`);
+  return request.then((res) => res);
+};
 
-
-  const getTracks = (searchWord) => {
-    const request = axios.get(`${baseUrl}/${searchWord}`)
-    return request.then(res => res)
-  
-  }
-
-
-export default { getTracks }
+export default getTracks;
